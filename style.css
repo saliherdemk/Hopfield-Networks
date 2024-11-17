@@ -1,0 +1,32 @@
+button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#train-canvas-container,
+#test-canvas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+  max-height: 310px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+#train-button,
+#fix-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 50px;
+}
