@@ -5,4 +5,4 @@ This project implements a simple Hopfield Network for pattern recognition, using
 # Live Demo
 Available [here](https://saliherdemk.github.io/Hopfield-Networks/)
 
-<img src="https://github.com/saliherdemk/Hopfield-Networks/blob/master/media/demo.gif" width="600" height="338">
+<img src="https://github.com/saliherdemk/Hopfield-Networks/blob/master/media/demo.gif">
