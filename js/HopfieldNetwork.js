@@ -32,7 +32,6 @@ class HopfieldNetwork {
     this.weights = this.createWeightMatrix();
 
     const data = [];
-    console.log(JSON.stringify(patterns));
 
     patterns.forEach((_pattern) => {
       const pattern = new Matrix(_pattern);
