@@ -68,6 +68,7 @@ class TextCanvas {
       this.drawTrainHeader(p);
       this.drawTrainData(p);
       this.drawTrainOps(p);
+      this.drawInfo(p);
     }
 
     if (this.testData.length) {
@@ -104,6 +105,17 @@ class TextCanvas {
           : this.baseYOffset + 195 + i * this.rowHeight;
       this.drawTextRow(p, this.trainOps, this.trainXOps, yOffset);
     }
+  }
+
+  drawInfo(p) {
+    p.textSize(9);
+    p.textAlign(p.CENTER, p.TOP);
+    p.text(
+      "A more formal way to do it is B−M×I, where M is the number of states and I is the identity matrix.\n This is the same as performing element-wise multiplication of B with M, where M is the mask matrix.",
+      p.width / 2 + 325,
+      this.baseYOffset,
+    );
+    p.textSize(12);
   }
 
   drawTrainData(p) {
