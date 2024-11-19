@@ -9,6 +9,12 @@ button {
   font-size: 16px;
 }
 
+a {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 #train-canvas-container,
 #test-canvas-container {
   display: flex;
