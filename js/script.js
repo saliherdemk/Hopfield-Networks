@@ -16,3 +16,9 @@ function train() {
 function fix() {
   organizer.fix();
 }
+
+function changeMaxIt(e) {
+  const val = e.target.value;
+  document.getElementById("max-it-label").innerText = val;
+  organizer.hopfieldNetwork.setMaxIterations(val);
+}

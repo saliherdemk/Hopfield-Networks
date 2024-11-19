@@ -7,9 +7,10 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
+    <h1>Hopfield Networks</h1>
     <div id="header">
       <button id="remove-canvas" onclick="removeCanvas()">Remove Canvas</button>
-      <h1>Training Patterns</h1>
+      <h3>Training Patterns</h3>
       <button id="add-canvas" onclick="addCanvas()">Add Canvas</button>
     </div>
     <div id="train-canvas-container"></div>
@@ -18,9 +19,28 @@
 
     <div id="test-canvas-container"></div>
     <button id="fix-button" onclick="fix()">Fix!</button>
+    <div id="max-it-container">
+      <span>Max iterations:</span>
+
+      <input
+        type="range"
+        min="1"
+        value="5"
+        max="100"
+        oninput="changeMaxIt(event)"
+      />
+      <span id="max-it-label">5</span>
+    </div>
+    <span id="err-span"
+      >Pattern did not converge: Unable to recognize the input pattern.</span
+    >
+
+    <div id="calc-canvas"></div>
 
     <script src="js/p5.min.js"></script>
+    <script src="js/Matrix.js"></script>
     <script src="js/DrawableCanvas.js"></script>
+    <script src="js/TextCanvas.js"></script>
     <script src="js/HopfieldNetwork.js"></script>
     <script src="js/organizer.js"></script>
     <script src="js/script.js"></script>
